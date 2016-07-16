@@ -8,15 +8,37 @@ public class ControlJugador : MonoBehaviour {
 	public int jump;
 	private Rigidbody2D body;
 	private bool enSuelo;
+    private float sentidoSprit;
+
+    Animator anim;
 	void Start () {
 		body = GetComponent<Rigidbody2D> ();
+        sentidoSprit = transform.localScale.x;
+        anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 		Vector3 aux = body.velocity;
-		body.velocity = new Vector3 (speed * Input.GetAxis("Horizontal"), aux.y, aux.z);
+        float sentido = Input.GetAxis("Horizontal");
+		body.velocity = new Vector3 (speed * sentido, aux.y, aux.z);
+        if (sentido > 0.5 || sentido < -0.5)
+        {
+            anim.SetBool("running", true);
+        }
+        else{
+            anim.SetBool("running", false);
+        }
+
+        //Girar el sprit del jugador a la dirección en la que está
+        if ( sentido > 0.2)
+        {
+            transform.localScale = new Vector3(sentidoSprit,0.2f,0.2f);
+        }else if (sentido < -0.2)
+        {
+            transform.localScale = new Vector3(-sentidoSprit, 0.2f, 0.2f);
+        }
 
 		if (Input.GetKey(KeyCode.Space) && enSuelo) {
 			aux = body.velocity;

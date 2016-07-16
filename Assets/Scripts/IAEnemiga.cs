@@ -22,14 +22,6 @@ public class IAEnemiga : MonoBehaviour {
 		Vector3 playerPosition = player.transform.position;
 		Vector3 enemyPosition = body.position;
 
-
-//		if (playerPosition.y - enemyPosition.y > 1) {
-//			Debug.Log ("salta");
-//		} else {
-//			Debug.Log ("joe");
-//		}
-
-
 		if (playerPosition.x - enemyPosition.x > 0) {
 			XDirection = 1;
 		} else {
