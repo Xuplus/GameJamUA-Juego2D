@@ -1,9 +1,15 @@
 fileFormatVersion: 2
 guid: b952b8c66fe20624da5de83a6e3609a1
-timeCreated: 1468685816
+timeCreated: 1468691867
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: body
+    21300002: wings
+    21300004: halo
+    21300006: head
+    21300008: hand
+    21300010: sword
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +36,174 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: body
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 497
+        width: 126
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58, y: 86}
+        - {x: -40, y: 86}
+        - {x: -60, y: 78}
+        - {x: -60, y: -90}
+        - {x: -52, y: -91}
+        - {x: 54, y: -91}
+        - {x: 60, y: -78}
+        - {x: 60, y: 77}
+    - name: wings
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 338
+        width: 253
+        height: 191
+      alignment: 9
+      pivot: {x: 0.49406993, y: 0.28791547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.999695, y: 49.00815}
+        - {x: -31.999695, y: 45.00815}
+        - {x: -31.999695, y: 40.00815}
+        - {x: -28.999695, y: 34.00815}
+        - {x: -36.999695, y: 47.00815}
+        - {x: -69.999695, y: 82.00815}
+        - {x: -76.999695, y: 78.00815}
+        - {x: -75.999695, y: 69.00815}
+        - {x: -61.999695, y: 47.00815}
+        - {x: -61.999695, y: 45.00815}
+        - {x: -59.999695, y: 41.00815}
+        - {x: -61.999695, y: 46.00815}
+        - {x: -72.999695, y: 65.00815}
+        - {x: -74.999695, y: 67.00815}
+        - {x: -82.999695, y: 89.00815}
+        - {x: -90.999695, y: 103.00815}
+        - {x: -111.999695, y: 122.00815}
+        - {x: -119.999695, y: 122.00815}
+        - {x: -119.999695, y: 6.008148}
+        - {x: -70.999695, y: -51.99185}
+        - {x: -35.999695, y: -51.99185}
+        - {x: -1.9996948, y: -7.991852}
+        - {x: -1.9996948, y: 26.008148}
+        - {x: -13.999695, y: 62.00815}
+      - - {x: 117.000305, y: 126.00815}
+        - {x: 116.000305, y: 129.00815}
+        - {x: 109.000305, y: 129.00815}
+        - {x: 74.000305, y: 93.00815}
+        - {x: 77.000305, y: 82.00815}
+        - {x: 69.000305, y: 62.00815}
+        - {x: 63.000305, y: 48.00815}
+        - {x: 76.000305, y: 81.00815}
+        - {x: 76.000305, y: 83.00815}
+        - {x: 71.000305, y: 85.00815}
+        - {x: 65.000305, y: 84.00815}
+        - {x: 57.000305, y: 74.00815}
+        - {x: 47.000305, y: 29.008148}
+        - {x: 45.000305, y: 24.008148}
+        - {x: 45.000305, y: 25.008148}
+        - {x: 46.000305, y: 50.00815}
+        - {x: 38.000305, y: 74.00815}
+        - {x: 15.000305, y: 61.00815}
+        - {x: 3.0003052, y: 27.008148}
+        - {x: 3.0003052, y: -0.9918518}
+        - {x: 27.000305, y: -46.99185}
+        - {x: 87.000305, y: -46.99185}
+        - {x: 112.000305, y: 10.008148}
+        - {x: 119.000305, y: 69.00815}
+        - {x: 119.000305, y: 111.00815}
+    - name: halo
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 715
+        width: 96
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: head
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 65
+        width: 108
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 36}
+        - {x: 19, y: 51}
+        - {x: 4, y: 58}
+        - {x: -19, y: 58}
+        - {x: -47, y: 41}
+        - {x: -47, y: -37}
+        - {x: -35, y: -60}
+        - {x: 37, y: -60}
+        - {x: 49, y: -38}
+        - {x: 49, y: 5}
+        - {x: 48, y: 9}
+    - name: hand
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 100
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 22.5}
+        - {x: -13, y: 22.5}
+        - {x: -15, y: 21.5}
+        - {x: -21, y: 15.5}
+        - {x: -21, y: -16.5}
+        - {x: -19, y: -22.5}
+        - {x: 10, y: -22.5}
+        - {x: 14, y: -19.5}
+        - {x: 21, y: -14.5}
+        - {x: 21, y: 11.5}
+    - name: sword
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 73
+        height: 274
+      alignment: 9
+      pivot: {x: 0.5112823, y: 0.22345896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.323608, y: 212.77225}
+        - {x: -25.323608, y: -61.227753}
+        - {x: 23.676392, y: -61.227753}
+        - {x: 23.676392, y: 212.77225}
     outline: []
   spritePackingTag: 
   userData: 

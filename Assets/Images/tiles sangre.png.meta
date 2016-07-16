@@ -1,14 +1,13 @@
 fileFormatVersion: 2
-guid: 4f073005d6b79a04d85179075f7d21a1
-timeCreated: 1468690110
+guid: 0ef7c10dad16d4a67a577dfae3090ddb
+timeCreated: 1468689539
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: suelo
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -31,41 +30,26 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 1
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
-  nPOTScale: 0
+    wrapMode: -1
+  nPOTScale: 1
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 2
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 1
-  textureType: 8
+  alphaIsTransparency: 0
+  textureType: -1
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: suelo
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 478
-        width: 476
-        height: 139
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -238, y: 69.5}
-        - {x: -238, y: -69.5}
-        - {x: 238, y: -69.5}
-        - {x: 238, y: 69.5}
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 
