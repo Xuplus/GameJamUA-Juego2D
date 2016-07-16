@@ -37,4 +37,12 @@ public class IAEnemiga : MonoBehaviour {
 			
 		body.velocity = new Vector3(speed * XDirection, speed * YDirection,currentVelocity.z);
 	}
+
+    void OnCollision2DEnter(Collision2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            col.gameObject.GetComponent<Vidas>().Damaged();
+        }
+    }
 }

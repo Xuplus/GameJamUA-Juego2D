@@ -62,4 +62,5 @@ public class ControlJugador : MonoBehaviour {
 	public void SetEnSuelo(bool valor){
 		enSuelo = valor;
 	}
+    
 }
