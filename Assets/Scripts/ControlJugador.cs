@@ -19,7 +19,7 @@ public class ControlJugador : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        if (enSuelo) anim.SetTrigger("onground");
 		Vector3 aux = body.velocity;
         float sentido = Input.GetAxis("Horizontal");
 		body.velocity = new Vector3 (speed * sentido, aux.y, aux.z);
@@ -43,6 +43,7 @@ public class ControlJugador : MonoBehaviour {
 		if (Input.GetKey(KeyCode.Space) && enSuelo) {
 			aux = body.velocity;
 			body.velocity = new Vector3 (aux.x, jump, aux.z);
+            anim.SetTrigger("jump");
 		}
 	}
 

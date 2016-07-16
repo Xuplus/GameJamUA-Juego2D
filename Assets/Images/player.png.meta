@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e433298e1762c77419d00af180643d62
-timeCreated: 1468669296
+timeCreated: 1468688045
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -14,6 +14,7 @@ TextureImporter:
     21300014: cinturon
     21300016: pupila_i
     21300018: pupila_d
+    21300020: tridente
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -239,6 +240,29 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+    - name: tridente
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 21
+        width: 232
+        height: 396
+      alignment: 9
+      pivot: {x: 0.7161172, y: 0.2377282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -120.13919, y: 292.85962}
+        - {x: -122.13919, y: 268.85962}
+        - {x: -139.13919, y: 284.85962}
+        - {x: -165.13919, y: 284.85962}
+        - {x: -165.13919, y: 176.85963}
+        - {x: -25.13919, y: -85.140366}
+        - {x: 39.86081, y: -85.140366}
+        - {x: 39.86081, y: -60.140366}
+        - {x: -23.13919, y: 233.85963}
+        - {x: -55.13919, y: 299.85962}
+        - {x: -71.13919, y: 299.85962}
+        - {x: -89.13919, y: 295.85962}
     outline: []
   spritePackingTag: 
   userData: 

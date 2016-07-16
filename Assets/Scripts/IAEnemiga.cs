@@ -16,6 +16,8 @@ public class IAEnemiga : MonoBehaviour {
 		player = GameObject.FindWithTag ("Player");
 	}
 
+    // 146 grados hay que restar a la direccion donde miras
+
 	// Update is called once per frame
 	void Update () {
 		Vector3 currentVelocity = body.velocity;
