@@ -24,15 +24,19 @@ public class ControlJugador : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter2D (Collision2D col) {
-		if (col.gameObject.layer == LayerMask.NameToLayer("Suelo")) {
-			enSuelo = true;
-		}
-	}
+//	void OnCollisionEnter2D (Collision2D col) {
+//		if (col.gameObject.layer == LayerMask.NameToLayer("Suelo")) {
+//			enSuelo = true;
+//		}
+//	}
+//
+//	void OnCollisionExit2D (Collision2D col) {
+//		if (col.gameObject.layer == LayerMask.NameToLayer("Suelo")) {
+//			enSuelo = false;
+//		}
+//	}
 
-	void OnCollisionExit2D (Collision2D col) {
-		if (col.gameObject.layer == LayerMask.NameToLayer("Suelo")) {
-			enSuelo = false;
-		}
+	public void SetEnSuelo(bool valor){
+		enSuelo = valor;
 	}
 }
