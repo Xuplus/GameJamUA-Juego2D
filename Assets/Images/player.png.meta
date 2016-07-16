@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: e433298e1762c77419d00af180643d62
+timeCreated: 1468669296
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cabeza
+    21300002: cuerpo
+    21300004: mano
+    21300006: ojo_i
+    21300008: ojo_d
+    21300010: ojo_i_mal
+    21300012: ojo_d_mal
+    21300014: cinturon
+    21300016: pupila_i
+    21300018: pupila_d
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cabeza
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 421
+        width: 166
+        height: 171
+      alignment: 9
+      pivot: {x: 0.52157444, y: 0.44415033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 71.41864, y: 30.050293}
+        - {x: 52.41864, y: 92.05029}
+        - {x: 13.41864, y: 95.05029}
+        - {x: -74.58136, y: 95.05029}
+        - {x: -80.58136, y: 53.050293}
+        - {x: -80.58136, y: -48.949707}
+        - {x: -38.58136, y: -75.94971}
+        - {x: 23.41864, y: -75.94971}
+        - {x: 60.41864, y: -49.949707}
+        - {x: 68.41864, y: -29.949707}
+        - {x: 71.41864, y: -14.949707}
+    - name: cuerpo
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115
+        width: 184
+        height: 254
+      alignment: 9
+      pivot: {x: 0.46107215, y: 0.5187999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84.16273, y: 103.22482}
+        - {x: 68.16273, y: 107.22482}
+        - {x: -84.83727, y: 107.22482}
+        - {x: -84.83727, y: 82.22482}
+        - {x: -65.83727, y: -17.775177}
+        - {x: -51.837273, y: -90.77518}
+        - {x: -42.837273, y: -122.77518}
+        - {x: 38.162727, y: -122.77518}
+        - {x: 41.162727, y: -116.77518}
+        - {x: 70.16273, y: 36.224823}
+        - {x: 84.16273, y: 93.22482}
+    - name: mano
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 82
+        height: 67
+      alignment: 9
+      pivot: {x: 0.4999999, y: 0.42872933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.999992, y: 30.275135}
+        - {x: -30.999992, y: 23.275135}
+        - {x: -30.999992, y: -16.724865}
+        - {x: -23.999992, y: -28.724865}
+        - {x: 25.000008, y: -28.724865}
+        - {x: 30.000008, y: -14.724865}
+        - {x: 30.000008, y: 22.275135}
+        - {x: 18.000008, y: 30.275135}
+    - name: ojo_i
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 495
+        width: 81
+        height: 68
+      alignment: 9
+      pivot: {x: 0.57369053, y: 0.35955453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.468933, y: 22.550293}
+        - {x: -31.468933, y: -4.449707}
+        - {x: -28.468933, y: -18.449707}
+        - {x: 29.531067, y: -18.449707}
+        - {x: 31.531067, y: -10.449707}
+        - {x: 31.531067, y: 6.550293}
+        - {x: -8.468933, y: 22.550293}
+    - name: ojo_d
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 499
+        width: 61
+        height: 53
+      alignment: 9
+      pivot: {x: 0.40214863, y: 0.36485434}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.468933, y: 24.66272}
+        - {x: 17.468933, y: 24.66272}
+        - {x: -24.531067, y: 7.6627197}
+        - {x: -24.531067, y: -4.3372803}
+        - {x: -19.531067, y: -17.33728}
+        - {x: 8.468933, y: -17.33728}
+        - {x: 16.468933, y: -11.33728}
+        - {x: 25.468933, y: 18.66272}
+        - {x: 25.468933, y: 23.66272}
+    - name: ojo_i_mal
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 480
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 34.5}
+        - {x: -33, y: 19.5}
+        - {x: -33, y: -22.5}
+        - {x: -24, y: -33.5}
+        - {x: 21, y: -33.5}
+        - {x: 35, y: -24.5}
+        - {x: 35, y: 21.5}
+        - {x: 19, y: 34.5}
+    - name: ojo_d_mal
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 484
+        width: 79
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.5, y: 33}
+        - {x: -35.5, y: 20}
+        - {x: -35.5, y: -17}
+        - {x: -25.5, y: -30}
+        - {x: 21.5, y: -30}
+        - {x: 27.5, y: -21}
+        - {x: 27.5, y: 16}
+        - {x: 22.5, y: 33}
+    - name: cinturon
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 303
+        width: 164
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -67, y: -13.5}
+        - {x: -19, y: -13.5}
+        - {x: 68, y: -6.5}
+        - {x: 69, y: -5.5}
+        - {x: 69, y: 14.5}
+        - {x: -6, y: 14.5}
+        - {x: -67, y: 10.5}
+    - name: pupila_i
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 451
+        width: 27
+        height: 33
+      alignment: 9
+      pivot: {x: 0.6326441, y: 0.4276493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: pupila_d
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 456
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
