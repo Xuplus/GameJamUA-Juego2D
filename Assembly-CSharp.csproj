@@ -45,14 +45,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Atacar.cs" />
+     <Compile Include="Assets\Scripts\Atacar.cs" />
      <Compile Include="Assets\Scripts\ControlJugador.cs" />
      <Compile Include="Assets\Scripts\ControlSalto.cs" />
+     <Compile Include="Assets\Scripts\Control_Juego.cs" />
      <Compile Include="Assets\Scripts\GenerateEnemy.cs" />
      <Compile Include="Assets\Scripts\IAEnemiga.cs" />
-     <Compile Include="Assets\Vidas.cs" />
-     <Compile Include="Assets\armaMele.cs" />
-     <Compile Include="Assets\idleAtacar.cs" />
+     <Compile Include="Assets\Scripts\Vidas.cs" />
+     <Compile Include="Assets\Scripts\armaMele.cs" />
+     <Compile Include="Assets\Scripts\idleAtacar.cs" />
+     <Compile Include="Assets\ataqueAngel.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
