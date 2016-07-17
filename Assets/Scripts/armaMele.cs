@@ -3,10 +3,14 @@ using System.Collections;
 
 public class armaMele : MonoBehaviour {
 
+    private Control_Juego control;
     private float spawnTime;
-	// Use this for initialization
-	void Start () {
+    private bool gameover;
+
+    // Use this for initialization
+    void Start () {
         spawnTime = Time.time;
+        control = GameObject.FindGameObjectWithTag("GameController").GetComponent<Control_Juego>();
 	}
 	
 	// Update is called once per frame
@@ -16,10 +20,16 @@ public class armaMele : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("muere");
+        //Debug.Log("muere");
         if (col.gameObject.layer == LayerMask.NameToLayer("Enemigo"))
         {
             Destroy(col.gameObject);
+            control.AddKill(1);
         }
+    }
+
+    void GameOver()
+    {
+        gameover = true;
     }
 }

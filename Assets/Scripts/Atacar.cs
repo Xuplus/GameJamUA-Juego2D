@@ -9,8 +9,10 @@ public class Atacar : MonoBehaviour {
     private GameObject jugador;
     private float lastTimeAttack;
     public float freqAtaque;
-	// Use this for initialization
-	void Start () {
+    private bool gameover;
+
+    // Use this for initialization
+    void Start () {
         anim = GetComponent<Animator>();
         jugador = GameObject.FindGameObjectWithTag("Player");
         lastTimeAttack = Time.time;
@@ -18,9 +20,12 @@ public class Atacar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if (Input.GetAxis("Fire1") >= 0.7)
+        if (!gameover)
         {
-            AtacarMele();
+            if (Input.GetAxis("Fire1") >= 0.7)
+            {
+                AtacarMele();
+            }
         }
 	}
 
@@ -46,5 +51,10 @@ public class Atacar : MonoBehaviour {
     bool GetLetal()
     {
         return letal;
+    }
+
+    public void GameOver()
+    {
+        gameover = true;
     }
 }

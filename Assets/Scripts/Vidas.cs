@@ -28,6 +28,8 @@ public class Vidas : MonoBehaviour {
         control.setGameOver(true);
         Rigidbody2D body = GetComponent<Rigidbody2D>();
         body.freezeRotation = false;
+        GetComponent<ControlJugador>().GameOver();
+        GameObject.FindGameObjectWithTag("Mano").GetComponent<Atacar>().GameOver();
     }
 
     public void Damaged()
