@@ -9,11 +9,13 @@ public class ControlJugador : MonoBehaviour {
 	private Rigidbody2D body;
 	private bool enSuelo;
     private float sentidoSprit;
+	private Vector3 escala;
 
     Animator anim;
 	void Start () {
 		body = GetComponent<Rigidbody2D> ();
         sentidoSprit = transform.localScale.x;
+		escala = transform.localScale;
         anim = GetComponent<Animator>();
 	}
 	
@@ -34,13 +36,13 @@ public class ControlJugador : MonoBehaviour {
         //Girar el sprit del jugador a la dirección en la que está
         if ( sentido > 0.2)
         {
-            transform.localScale = new Vector3(sentidoSprit,0.2f,0.2f);
+			transform.localScale = new Vector3(sentidoSprit,escala.y,escala.z);
         }else if (sentido < -0.2)
         {
-            transform.localScale = new Vector3(-sentidoSprit, 0.2f, 0.2f);
+			transform.localScale = new Vector3(-sentidoSprit, escala.y, escala.z);
         }
 
-		if (Input.GetKey(KeyCode.Space) && enSuelo) {
+		if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow)) && enSuelo) {
 			aux = body.velocity;
 			body.velocity = new Vector3 (aux.x, jump, aux.z);
             anim.SetTrigger("jump");
