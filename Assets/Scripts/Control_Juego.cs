@@ -9,15 +9,24 @@ public class Control_Juego : MonoBehaviour {
     public Canvas canvas;
     private int killcount;
     public Text puntuacion;
+    public bool menuInicio;
 
 	// Use this for initialization
 	void Start () {
-        canvas.gameObject.SetActive(false);
+        if (!menuInicio)canvas.gameObject.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+        if (gameover && Input.GetKeyDown("r"))
+        {
+            Restart();
+        }
+
+        if (menuInicio && Input.GetKeyDown(KeyCode.Return))
+        {
+            SceneManager.LoadScene(1);
+        }
 	}
 
     public void setGameOver(bool b)
@@ -46,5 +55,16 @@ public class Control_Juego : MonoBehaviour {
     public void SaveData()
     {
 
+    }
+
+    public void Restart()
+    {
+        Debug.Log("Restart");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void NewGame()
+    {
+        SceneManager.LoadScene(1);
     }
 }

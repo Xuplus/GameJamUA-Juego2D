@@ -31,7 +31,7 @@ public class Atacar : MonoBehaviour {
 
     void AtacarMele()
     {
-        Debug.Log(lastTimeAttack + " - " + freqAtaque);
+        //Debug.Log(lastTimeAttack + " - " + freqAtaque);
         if (lastTimeAttack + freqAtaque <= Time.time)
         {
             anim.SetTrigger("atacarmele");

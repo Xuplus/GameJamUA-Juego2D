@@ -15,7 +15,7 @@ public class armaMele : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Time.time - spawnTime >= 0.1) Destroy(this.gameObject);
+        if (Time.time - spawnTime >= 0.08) Destroy(this.gameObject);
 	}
 
     void OnTriggerEnter2D(Collider2D col)
