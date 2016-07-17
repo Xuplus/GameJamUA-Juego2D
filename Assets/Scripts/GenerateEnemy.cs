@@ -17,7 +17,7 @@ public class GenerateEnemy : MonoBehaviour {
 	void Update () {
         if (!gameOver)
         {
-            int XPosition = Random.Range(-6, 6);
+            float XPosition = Random.Range(-6f, 6f);
             int dice = Random.Range(0, 10000);
             bool hit = dice > limit ? true : false;
 
