@@ -58,6 +58,12 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -66,8 +72,10 @@
     <Compile Include="Assets\Atacar.cs" />
     <Compile Include="Assets\Scripts\ControlJugador.cs" />
     <Compile Include="Assets\Scripts\ControlSalto.cs" />
+    <Compile Include="Assets\Scripts\GenerateEnemy.cs" />
     <Compile Include="Assets\Scripts\IAEnemiga.cs" />
     <Compile Include="Assets\Vidas.cs" />
+    <Compile Include="Assets\armaMele.cs" />
     <Compile Include="Assets\idleAtacar.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

@@ -21,7 +21,7 @@ public class Vidas : MonoBehaviour {
 
     private void GameOver()
     {
-        Debug.Log("Game Over");
+        //Debug.Log("Game Over");
     }
 
     public void Damaged()

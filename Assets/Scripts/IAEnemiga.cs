@@ -24,7 +24,7 @@ public class IAEnemiga : MonoBehaviour {
 		Vector3 playerPosition = player.transform.position;
 		Vector3 enemyPosition = body.position;
 
-		if (playerPosition.x - enemyPosition.x > 0) {
+        /*if (playerPosition.x - enemyPosition.x > 0) {
 			XDirection = 1;
 		} else {
 			XDirection = -1;
@@ -33,13 +33,27 @@ public class IAEnemiga : MonoBehaviour {
 			YDirection = 1;
 		} else {
 			YDirection = -1;
-		}
-			
-		body.velocity = new Vector3(speed * XDirection, speed * YDirection,currentVelocity.z);
-	}
+		}*/
 
-    void OnCollision2DEnter(Collision2D col)
+        //body.velocity = new Vector3(speed * XDirection, speed * YDirection,currentVelocity.z);
+
+        Vector3 distancia = player.transform.position - transform.position;
+        Vector3 modulo = distancia.normalized;
+
+        body.velocity = modulo * speed;
+
+        //transform.rotation = Quaternion.LookRotation(modulo);
+        
+
+        float rot_z = Mathf.Atan2(modulo.y, modulo.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, rot_z + 90);
+
+
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
     {
+        //Debug.Log("Colisiona el enemigo");
         if (col.gameObject.tag == "Player")
         {
             col.gameObject.GetComponent<Vidas>().Damaged();
