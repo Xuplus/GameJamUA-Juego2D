@@ -47,6 +47,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ControlJugador.cs" />
      <Compile Include="Assets\Scripts\ControlSalto.cs" />
+     <Compile Include="Assets\Scripts\GenerateEnemy.cs" />
+     <Compile Include="Assets\Scripts\IAEnemiga.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
