@@ -5,10 +5,12 @@ using System;
 public class Vidas : MonoBehaviour {
 
     public int vidas;
+    private GenerateEnemy generator;
+    public Control_Juego control;
 
 	// Use this for initialization
 	void Start () {
-	    
+        generator = GameObject.FindGameObjectWithTag("EnemyGenerator").GetComponent<GenerateEnemy>();
 	}
 	
 	// Update is called once per frame
@@ -22,6 +24,10 @@ public class Vidas : MonoBehaviour {
     private void GameOver()
     {
         //Debug.Log("Game Over");
+        generator.setGameOver(true);
+        control.setGameOver(true);
+        Rigidbody2D body = GetComponent<Rigidbody2D>();
+        body.freezeRotation = false;
     }
 
     public void Damaged()
@@ -29,18 +35,23 @@ public class Vidas : MonoBehaviour {
         vidas--;
     }
 
-    int GetVidas()
+    public int GetVidas()
     {
         return vidas;
     }
 
-    void SetVidas(int num)
+    public void SetVidas(int num)
     {
         vidas = num;
     }
 
-    void AddVidas(int num)
+    public void AddVidas(int num)
     {
         vidas += num;
+    }
+
+    public void Tienda()
+    {
+
     }
 }
