@@ -9,10 +9,11 @@ public class Control_Juego : MonoBehaviour {
     public Canvas canvas;
     private int killcount;
     public Text puntuacion;
+    public bool menuInicio;
 
 	// Use this for initialization
 	void Start () {
-        canvas.gameObject.SetActive(false);
+        if (!menuInicio)canvas.gameObject.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -20,6 +21,11 @@ public class Control_Juego : MonoBehaviour {
         if (gameover && Input.GetKeyDown("r"))
         {
             Restart();
+        }
+
+        if (menuInicio && Input.GetKeyDown(KeyCode.Return))
+        {
+            SceneManager.LoadScene(1);
         }
 	}
 
