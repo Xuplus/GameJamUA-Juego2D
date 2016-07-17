@@ -17,7 +17,10 @@ public class Control_Juego : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        if (gameover && Input.GetKeyDown("r"))
+        {
+            Restart();
+        }
 	}
 
     public void setGameOver(bool b)
@@ -46,5 +49,16 @@ public class Control_Juego : MonoBehaviour {
     public void SaveData()
     {
 
+    }
+
+    public void Restart()
+    {
+        Debug.Log("Restart");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void NewGame()
+    {
+        SceneManager.LoadScene(1);
     }
 }
