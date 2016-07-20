@@ -8,15 +8,12 @@ public class IAEnemiga : MonoBehaviour {
 	private GameObject player;
 	int XDirection;
 	int YDirection;
-	private float distance;
-	private Animator anim;
 
 
 	// Use this for initialization
 	void Start () {
 		body = GetComponent<Rigidbody2D> ();
 		player = GameObject.FindWithTag ("Player");
-		anim = GetComponentInChildren <Animator> ();
 	}
 
     // 146 grados hay que restar a la direccion donde miras
@@ -26,14 +23,6 @@ public class IAEnemiga : MonoBehaviour {
 		Vector3 currentVelocity = body.velocity;
 		Vector3 playerPosition = player.transform.position;
 		Vector3 enemyPosition = body.position;
-
-		distance = Vector3.Distance (playerPosition, enemyPosition);
-
-		if (distance < 2) {
-			anim.SetBool("atacando", true);
-		} else {
-			anim.SetBool("atacando", false);
-		}
 
         /*if (playerPosition.x - enemyPosition.x > 0) {
 			XDirection = 1;
